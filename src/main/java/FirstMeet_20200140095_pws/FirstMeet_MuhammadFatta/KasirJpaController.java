@@ -33,6 +33,11 @@ public class KasirJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public KasirJpaController() {
+    }
+    
+    
+
     public void create(Kasir kasir) throws IllegalOrphanException, PreexistingEntityException, Exception {
         List<String> illegalOrphanMessages = null;
         Orderr orderIdOrphanCheck = kasir.getOrderId();
