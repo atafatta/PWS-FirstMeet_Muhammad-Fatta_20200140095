@@ -33,6 +33,11 @@ public class TransaksiiJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public TransaksiiJpaController() {
+    }
+    
+    
+
     public void create(Transaksii transaksii) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
