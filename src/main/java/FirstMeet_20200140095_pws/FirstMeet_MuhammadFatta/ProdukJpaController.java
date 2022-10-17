@@ -31,6 +31,11 @@ public class ProdukJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public ProdukJpaController() {
+    }
+    
+    
+
     public void create(Produk produk) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
