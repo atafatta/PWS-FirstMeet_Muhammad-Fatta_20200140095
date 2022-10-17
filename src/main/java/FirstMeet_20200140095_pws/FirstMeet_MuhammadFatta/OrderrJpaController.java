@@ -33,6 +33,11 @@ public class OrderrJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public OrderrJpaController() {
+    }
+    
+    
+
     public void create(Orderr orderr) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
